@@ -21,9 +21,21 @@ public class Code02_BubbleSort {
     }
 
     public static void swap(int [] arr, int i, int j){
-        arr[i] = arr[i] ^ arr[j];
-        arr[j] = arr[i] ^ arr[j];
-        arr[i] = arr[i] ^ arr[j];
+        /**
+         * 异或运算
+         * 相同为0 不相同为1 也可以理解为无进位相加
+         *
+         * 性质：
+         * 1) 0 ^ N = N , N ^ N = 0
+         * 2）满足交换律，结合律 即同一批数运算与顺序无关 偶数次出现的数是0 奇数次是1
+         *
+         * 但是在这里必须保证a和b 分别指向不同的内存 即i的位置不等于j的位置
+         */
+
+        // 利用异或运算不需要增加新的临时变量 即不需要额外的空间
+        arr[i] = arr[i] ^ arr[j]; // a = 甲 ^ 乙; b = 乙
+        arr[j] = arr[i] ^ arr[j]; // a = 甲 ^ 乙; b = 甲 ^ 乙 ^ 乙 = 甲
+        arr[i] = arr[i] ^ arr[j]; // a = 甲 ^ 乙 ^ 甲 = 乙; b = 甲
     }
 
     public static void bubbleSort(int [] arr){
