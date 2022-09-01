@@ -1,5 +1,7 @@
 package com.aliano.SF_day01;
 
+import static com.aliano.tools.ArrayTest.testsort;
+
 /**
  * Created by Intellij IDEA.
  *
@@ -14,11 +16,12 @@ package com.aliano.SF_day01;
  */
 public class Code01_SelectionSort {
     public static void main(String[] args) {
-        int [] array = {2,5,63,7,6,89};
-        selectionSort(array);
-        for (int i : array) {
-            System.out.println(i);
-        }
+        // int [] array = {2,5,63,7,6,89};
+        // selectionSort(array);
+        // for (int i : array) {
+        //     System.out.println(i);
+        // }
+        testsort(500000,100,100);
     }
 
     public static void selectionSort(int [] arr){

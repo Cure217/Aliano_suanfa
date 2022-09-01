@@ -1,5 +1,7 @@
 package com.aliano.SF_day01;
 
+import static com.aliano.tools.ArrayTest.testsort;
+
 /**
  * Created by Intellij IDEA.
  *
@@ -13,11 +15,12 @@ package com.aliano.SF_day01;
  */
 public class Code02_BubbleSort {
     public static void main(String[] args) {
-        int [] array = {2,5,63,7,6,89,46,6451,613,13,138,13,3,13};
-        bubbleSort(array);
-        for (int i : array) {
-            System.out.println(i);
-        }
+        // int [] array = {2,5,63,7,6,89,46,6451,613,13,138,13,3,13};
+        // bubbleSort(array);
+        // for (int i : array) {
+        //     System.out.println(i);
+        // }
+        testsort(500000,100,100);
     }
 
     public static void swap(int [] arr, int i, int j){
