@@ -7,6 +7,10 @@ package com.aliano.SF_day01;
  * @create 2022/9/1 19:56
  *
  * 选择排序的实现
+ * 从0 - N-1 选出 最小的放到第一位
+ * 从1 - N-1 选出 最小的放到第二位
+ * 直到最后一位
+ * O(n²)
  */
 public class Code01_SelectionSort {
     public static void main(String[] args) {
