@@ -1,4 +1,4 @@
-package Test2;
+package Test.Test2;
 
 /**
  * @Author Cure

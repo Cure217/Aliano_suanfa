@@ -1,4 +1,4 @@
-package Test3;
+package Test.Test3;
 
 /**
  * @Author Cure
@@ -6,7 +6,6 @@ package Test3;
  */
 import java.io.*;
 import java.net.*;
-import java.util.*;
 
 
 public class Server {
