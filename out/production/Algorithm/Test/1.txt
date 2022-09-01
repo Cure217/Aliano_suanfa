@@ -1,5 +1,0 @@
-T1,A,B,C,D
-T2,B,C,E
-T3,A,B,C,E
-T4,B,D,E
-T5,A,B,C,D
