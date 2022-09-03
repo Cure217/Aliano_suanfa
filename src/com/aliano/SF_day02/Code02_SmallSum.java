@@ -8,7 +8,8 @@ import static com.aliano.tools.ArrayTest.testsort;
  * @author Cure
  * @create 2022/9/3 16:35
  *
- * 小和问题 3.3
+ * 3.3
+ * 小和问题
  */
 public class Code02_SmallSum {
     public static void main(String[] args) {
@@ -37,7 +38,7 @@ public class Code02_SmallSum {
         int p2 = m + 1;
         int res = 0;
         while (p1 <= m && p2 <= r) {
-            res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0;
+            res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0; // 先取右边区间个数
             help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
         }
         while (p1 <= m) {
