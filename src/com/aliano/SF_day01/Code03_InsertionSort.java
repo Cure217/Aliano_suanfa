@@ -10,6 +10,7 @@ import static com.aliano.tools.ArrayTest.testsort;
  * @author Cure
  * @create 2022/9/1 21:07
  *
+ * 2.2
  * 插入排序
  */
 public class Code03_InsertionSort {

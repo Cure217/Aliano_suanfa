@@ -8,6 +8,7 @@ import static com.aliano.tools.ArrayTest.testsort;
  * @author Cure
  * @create 2022/9/1 20:11
  *
+ * 2.2
  * 冒泡排序的实现
  * 0 - N-1 前后两个一次作比较 小的在前大的在后 选出最大的在第N个
  * 0 - N-2 前后两个一次作比较 小的在前大的在后 选出最大的在第N-1个

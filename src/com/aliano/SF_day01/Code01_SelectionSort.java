@@ -8,6 +8,7 @@ import static com.aliano.tools.ArrayTest.testsort;
  * @author Cure
  * @create 2022/9/1 19:56
  *
+ * 2.2
  * 选择排序的实现
  * 从0 - N-1 选出 最小的放到第一位
  * 从1 - N-1 选出 最小的放到第二位

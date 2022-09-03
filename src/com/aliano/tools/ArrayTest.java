@@ -7,6 +7,7 @@ import java.util.Arrays;
 import static com.aliano.SF_day01.Code01_SelectionSort.selectionSort;
 import static com.aliano.SF_day01.Code02_BubbleSort.bubbleSort;
 import static com.aliano.SF_day01.Code03_InsertionSort.insertionSort;
+import static com.aliano.SF_day02.Code01_MergeSort.mergeSort;
 
 /**
  * Created by Intellij IDEA.
@@ -26,7 +27,10 @@ public class ArrayTest {
             // bubbleSort(arr1);
             // comparetor(arr2);
 
-            selectionSort(arr1);
+            // selectionSort(arr1);
+            // comparetor(arr2);
+
+            mergeSort(arr1);
             comparetor(arr2);
 
             if (!isEqual(arr1,arr2)) {
