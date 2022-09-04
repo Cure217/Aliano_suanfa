@@ -13,12 +13,12 @@ import static com.aliano.util.ArrayTest.testsort;
  */
 public class Code03_InsertionSort {
     public static void main(String[] args) {
-        // int [] array = {2,5,63,7,6,89,46,6451,613,13,138,13,3,13};
-        // insertionSort(array);
-        // for (int i : array) {
-        //     System.out.println(i);
-        // }
-        testsort(500000,100,100);
+        int [] array = {2,5,63,7,13,3,13};
+        insertionSort(array);
+        for (int i : array) {
+            System.out.println(i);
+        }
+        // testsort(500000,100,100);
 
     }
 
@@ -36,7 +36,7 @@ public class Code03_InsertionSort {
             return;
         }
         for (int i = 1; i < arr.length; i++) {
-            for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) {
+            for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) { // 保证j和i不相等
                 swap(arr, j, j+1);
             }
         }

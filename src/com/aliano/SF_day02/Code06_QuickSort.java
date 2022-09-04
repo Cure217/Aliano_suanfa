@@ -14,7 +14,7 @@ import static com.aliano.util.ArrayTest.testsort;
  */
 public class Code06_QuickSort {
     public static void main(String[] args) {
-        testsort(500000, 100, 100);
+        testsort(1, 10, 10);
     }
     public static void swap(int [] arr, int i, int j){
         int tmp = arr[i];

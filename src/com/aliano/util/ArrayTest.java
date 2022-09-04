@@ -2,6 +2,7 @@ package com.aliano.util;
 
 import java.util.Arrays;
 
+import static com.aliano.SF_day02.Code01_MergeSort.mergeSort;
 import static com.aliano.SF_day02.Code06_QuickSort.quickSort;
 
 /**
@@ -25,11 +26,11 @@ public class ArrayTest {
             // selectionSort(arr1);
             // comparetor(arr2);
 
-            // mergeSort(arr1);
-            // comparetor(arr2);
-
-            quickSort(arr1);
+            mergeSort(arr1);
             comparetor(arr2);
+
+            // quickSort(arr1);
+            // comparetor(arr2);
 
             if (!isEqual(arr1,arr2)) {
                 succeed = false;

@@ -13,14 +13,17 @@ import static com.aliano.util.ArrayTest.testsort;
  */
 public class Code02_SmallSum {
     public static void main(String[] args) {
-        testsort(500000, 100, 100);
+        // testsort(500000, 100, 100);
+        int [] array = {2,5,63,7,13,3,13};
+        smallSum(array);
     }
 
     public static void smallSum(int[] arr){
         if (arr == null || arr.length < 2) {
             return;
         }
-        process(arr, 0, arr.length - 1);
+        System.out.println(process(arr, 0, arr.length - 1));
+
     }
 
     public static int process(int[] arr, int l, int r){
@@ -39,7 +42,7 @@ public class Code02_SmallSum {
         int res = 0;
         while (p1 <= m && p2 <= r) {
             res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0; // 先取右边区间个数
-            help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
+            help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++]; // 两个值相等时 先将右边的值拷贝下去
         }
         while (p1 <= m) {
             help[i++] = arr[p1++];

@@ -10,8 +10,8 @@ import static com.aliano.util.ArrayTest.testsort;
  *
  * 2.2
  * 冒泡排序的实现
- * 0 - N-1 前后两个一次作比较 小的在前大的在后 选出最大的在第N个
- * 0 - N-2 前后两个一次作比较 小的在前大的在后 选出最大的在第N-1个
+ * 0 - N-1 前后两个依次作比较 小的在前大的在后 选出最大的在第N个
+ * 0 - N-2 前后两个依次作比较 小的在前大的在后 选出最大的在第N-1个
  * O(n²)
  */
 public class Code02_BubbleSort {
@@ -43,7 +43,7 @@ public class Code02_BubbleSort {
     }
 
     public static void bubbleSort(int [] arr){
-        if (arr ==null || arr.length < 2) {
+        if (arr == null || arr.length < 2) {
             return;
         }
         for (int e = arr.length - 1; e > 0 ; e--) {
