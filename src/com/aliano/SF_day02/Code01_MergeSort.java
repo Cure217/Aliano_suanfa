@@ -8,7 +8,7 @@ import static com.aliano.util.ArrayTest.testsort;
  * @author Cure
  * @create 2022/9/3 15:38
  *
- * 归并排序 3.3
+ * 归并排序 3.3  重点!!!!!!!!
  * 利用递归
  *
  * 左边有序 + 右边有序 在归并到一起

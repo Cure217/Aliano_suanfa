@@ -41,8 +41,14 @@ public class Code02_SmallSum {
         int p2 = m + 1;
         int res = 0;
         while (p1 <= m && p2 <= r) {
-            res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0; // 先取右边区间个数
-            help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++]; // 两个值相等时 先将右边的值拷贝下去
+            // 先取右边区间个数
+            // (r - p2 + 1) 是右边比左边当前数大的个数
+            res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0;
+
+            // 两个值相等时
+            // 先将右边的值拷贝下去 正常应该是用 <=
+            help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
+
         }
         while (p1 <= m) {
             help[i++] = arr[p1++];

@@ -26,11 +26,11 @@ public class ArrayTest {
             // selectionSort(arr1);
             // comparetor(arr2);
 
-            mergeSort(arr1);
-            comparetor(arr2);
-
-            // quickSort(arr1);
+            // mergeSort(arr1);
             // comparetor(arr2);
+
+            quickSort(arr1);
+            comparetor(arr2);
 
             if (!isEqual(arr1,arr2)) {
                 succeed = false;
