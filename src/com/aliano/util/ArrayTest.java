@@ -1,13 +1,7 @@
-package com.aliano.tools;
-
-import com.aliano.SF_day01.Code02_BubbleSort;
+package com.aliano.util;
 
 import java.util.Arrays;
 
-import static com.aliano.SF_day01.Code01_SelectionSort.selectionSort;
-import static com.aliano.SF_day01.Code02_BubbleSort.bubbleSort;
-import static com.aliano.SF_day01.Code03_InsertionSort.insertionSort;
-import static com.aliano.SF_day02.Code01_MergeSort.mergeSort;
 import static com.aliano.SF_day02.Code06_QuickSort.quickSort;
 
 /**

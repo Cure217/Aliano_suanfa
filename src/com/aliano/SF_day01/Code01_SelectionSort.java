@@ -1,6 +1,6 @@
 package com.aliano.SF_day01;
 
-import static com.aliano.tools.ArrayTest.testsort;
+import static com.aliano.util.ArrayTest.testsort;
 
 /**
  * Created by Intellij IDEA.
